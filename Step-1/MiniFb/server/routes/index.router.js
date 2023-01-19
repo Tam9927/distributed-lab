@@ -19,7 +19,7 @@ var upload = multer({ storage: storage })
 app.use(express.static(__dirname + '/public'));
 app.use('/uploads', express.static('uploads'));
 
-
+//routes where serve listens to clients for requests
 router.post('/register', ctrlUser.register);
 router.post('/authenticate', ctrlUser.authenticate);
 router.get('/userProfile',jwtHelper.verifyJwtToken, ctrlUser.userProfile);
