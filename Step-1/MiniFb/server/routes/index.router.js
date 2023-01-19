@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const app=express();
-const ctrlUser = require('../controllers/user.controller');
+const ctrlUser = require('../controllers/user.controller'); //load the necessary objects
 const ctrlPost = require('../controllers/post.controller');
 const jwtHelper = require('../config/jwtHelper');
 
